@@ -4,19 +4,19 @@ let msgcontent=document.querySelector(".msg-content");
 let newgame=document.querySelector("#new");
 let message=document.querySelector("#msg");
 let turnO;
-const patterns=[
+let patterns=[
     [0,1,2],
     [0,3,6],
     [0,4,8],
     [1,4,7],
     [2,5,8],
-    [2.4,6],
+    [2,4,6],
     [3,4,5],
     [6,7,8],
 ];
 const randomizeTurn = () => {
     turnO = Math.random() < 0.5; 
-    message.innerText = `Player ${turnO ? "O" : "X"} starts!`; 
+    // message.innerText = `Player ${turnO ? "O" : "X"} starts!`; 
 };
 const resetgame=()=>
 {
